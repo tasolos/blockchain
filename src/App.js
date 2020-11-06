@@ -7,8 +7,13 @@ import { Register } from './Register';
 import { Login } from './Login';
 import { NoMatch } from './NoMatch';
 import Sidebar from './components/Sidebar';
+import Web3 from 'web3';
+
+
+
 
 function App() {
+  window.web3 = new Web3(window.web3.currentProvider);
   return (
     <React.Fragment>
     <Router>
